@@ -1,0 +1,9 @@
+path: ../02_dataset
+train: images/train
+val: images/val
+nc: 4
+names:
+- BOUNTY
+- MARS
+- SNICKERS
+- TWIX

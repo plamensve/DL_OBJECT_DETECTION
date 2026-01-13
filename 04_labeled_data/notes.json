@@ -1,0 +1,25 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "BOUNTY"
+    },
+    {
+      "id": 1,
+      "name": "MARS"
+    },
+    {
+      "id": 2,
+      "name": "SNICKERS"
+    },
+    {
+      "id": 3,
+      "name": "TWIX"
+    }
+  ],
+  "info": {
+    "year": 2026,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}

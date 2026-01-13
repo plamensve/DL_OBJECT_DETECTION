@@ -1,0 +1,1 @@
+mlflow server --backend-store-uri sqlite:///05_experiments/mlflow.db --default-artifact-root ./05_experiments/mlartifacts --serve-artifacts --host 127.0.0.1 --port 5000
