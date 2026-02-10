@@ -12,9 +12,9 @@ AUGMENTATION_PARAMS = {
     "hsv_s": 0.7,
     "hsv_v": 0.4,
 
-    "degrees": 10,
-    "shear": 2,
-    "scale": 0.5,
+    # "degrees": 10,
+    # "shear": 2,
+    # "scale": 0.5,
 }
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
@@ -22,14 +22,14 @@ mlflow.set_experiment("SMBT")
 
 with mlflow.start_run():
     mlflow.log_param("epochs", 250)
-    mlflow.log_param("batch_size", 6)
+    mlflow.log_param("batch_size", 4)
     mlflow.log_param("img_size", 640)
     mlflow.log_param("device", 0)
     mlflow.log_param("workers", 0)
 
     mlflow.log_params(AUGMENTATION_PARAMS)
 
-    PATH_ARTIFACTS = '../01_notebooks/runs/detect/smbt_detection_15'
+    PATH_ARTIFACTS = '../01_notebooks/runs/detect/smbt_detection_172'
 
     mlflow.log_artifact(f'{PATH_ARTIFACTS}/BoxF1_curve.png')
     mlflow.log_artifact(f'{PATH_ARTIFACTS}/BoxP_curve.png')
